@@ -1,0 +1,12 @@
+bill=float(input("Enter the bill: \t"))
+tip_persent=int(input("Enter the tip persentage u want to give : \t"))
+pepole=int(input("Enter the no. of pepole u r: \t"))
+
+tip=bill*tip_persent/100
+total=bill+tip
+each=total/pepole
+
+print("-------------Recipt-------------")
+print(f"Total tip ({tip_persent:g}%): {tip:>10.2f}")
+print(f"Total bill:       {total:>10.2f}")
+print(f"Each will pay:    {each:>10.2f}")
